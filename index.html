@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Store</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=arrow_drop_down" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+<header class="navbar">
+    <div class="nav-left">
+        <h1 class="logo">StyleKart</h1>
+    </div>
+
+    <div class="nav-center">
+        <input class="search-box" type="search" placeholder="Search for Products, Brands and More">
+    </div>
+
+    <nav class="nav-right">
+        <a href="#">Home</a>
+        <a href="#">Products</a>
+        <a href="login.html">Login</a>
+        <a href="cart.html" class="cart"><i class="fa-brands fa-opencart"></i> Cart </a>
+    </nav>
+</header>
+
+<section class="hero">
+    <div>
+        <h2>Move with Style</h2>
+        <p>AI-powered fashion made for you</p>
+
+        <button class="ai-btn" onclick="goToOutfitBuilder()">
+            Try AI Outfit Builder
+        </button>
+    </div>
+</section>
+<hr>
+    <h2>Men's Wear<span class="material-symbols-outlined">arrow_drop_down</span></h2>
+<section class="products">
+
+<div class="card">
+<img src="https://m.media-amazon.com/images/I/618P4lGfLqL._SY879_.jpg">
+<h3>THE BEAR HOUSE</h3>
+<p>Men Opaque Casual Shirt</p>
+<p><del>₹1499</del> <b>₹999</b> 🔥Hot Deal</p>
+<button onclick="addToCart('THE BEAR HOUSE',999,'Men Opaque Casual Shirt','https://m.media-amazon.com/images/I/618P4lGfLqL._SY879_.jpg')">Add to Cart</button>
+</div>
+
+<div class="card">
+<img src="https://m.media-amazon.com/images/I/61lkPO7RtML._SY550_.jpg">
+<h3>ROADSTER</h3>
+<p>The Life Co. Pure Cotton Denim Jacket</p>
+<p><del>₹1999</del> <b>₹1199</b></p>
+<button onclick="addToCart('ROADSTER', 1199,'The Life Co. Pure Cotton Denim Jacket','https://m.media-amazon.com/images/I/61lkPO7RtML._SY550_.jpg')">Add to Cart</button>
+</div>
+
+<div class="card">
+<img src="https://m.media-amazon.com/images/I/51at6davq4L._SY550_.jpg">
+<h3>SAMFOR</h3>
+<p>Men's Baggy Corduroy Pants</p>
+<p><del>₹2999</del> <b>₹2499</b> 🔥Hot Deal</p>
+<button onclick="addToCart('SAMFOR', 2499,'Men Baggy Corduroy Pants','https://m.media-amazon.com/images/I/51at6davq4L._SY550_.jpg')">Add to Cart</button>
+</div>
+
+<div class="card">
+<img src="https://m.media-amazon.com/images/I/71deQmmADuL._SX679_.jpg">
+<h3>LONDON HILLS</h3>
+<p>Men's Cotton Oversized Fit</p>
+<p> <del>₹1299</del><b>₹999</b></p>
+<button onclick="addToCart('LONDON HILLS', 999,'Men Cotton Oversized Fit','https://m.media-amazon.com/images/I/71deQmmADuL._SX679_.jpg')">Add to Cart</button>
+</div>
+
+</section>
+<hr>
+<h2>Women's Wear<span class="material-symbols-outlined">arrow_drop_down</span></h2>
+<section class="products">
+
+<div class="card">
+<img src="https://m.media-amazon.com/images/I/716j82DumFL._SY550_.jpg">
+<h3>WHITE KABAR</h3>
+<p>Tussar Silk Lehenga Choli Set with Dupatta </p>
+<p><del>₹2999</del> <b>₹2199</b> 🔥Hot Deal</p>
+<button onclick="addToCart('WHITE KABAR', 2199,'Tussar Silk Lehenga Choli Set with Dupatta','https://m.media-amazon.com/images/I/716j82DumFL._SY550_.jpg')">Add to Cart</button>
+</div>
+
+<div class="card">
+<img src="https://m.media-amazon.com/images/I/91UAJ9K16IL._SX522_.jpg">
+<h3>ARAYNA</h3>
+<p>Women's Pure Cotton Paisley Printed Tunic Top</p>
+<p><del>₹1299</del><b>₹999</b></p>
+<button onclick="addToCart('ARAYNA', 999,'Women Pure Cotton Paisley Printed Tunic Top','https://m.media-amazon.com/images/I/91UAJ9K16IL._SX522_.jpg')">Add to Cart</button>
+</div>
+
+<div class="card">
+<img src="https://m.media-amazon.com/images/I/31+y0iB-3YL.jpg">
+<h3>MIRAGGIO</h3>
+<p>Ladies Purple Handbag with Floral Embroidery and Butterfly Charm</p>
+<p><del>₹1999</del><b>₹1499</b></p>
+<button onclick="addToCart('MIRAGGIO', 1499,'Ladies Purple Handbag with Floral Embroidery and Butterfly Charm','https://m.media-amazon.com/images/I/31+y0iB-3YL.jpg')">Add to Cart</button>
+</div>
+
+<div class="card">
+<img src="https://m.media-amazon.com/images/I/51yzhfRKt3L._SY550_.jpg">
+<h3>KOTTY</h3>
+<p>Women Black Thick Jeans Party Celebrations</p>
+<p><del>₹1999</del> <b> ₹1599 </b> 🔥Hot Deal</p>
+<button onclick="addToCart('KOTTY', 1599,'Women Black Thick Jeans Party Celebrations','https://m.media-amazon.com/images/I/51yzhfRKt3L._SY550_.jpg')">Add to Cart</button>
+</div>
+
+</section>
+<hr>
+
+<h2>Kid's Wear<span class="material-symbols-outlined">arrow_drop_down</span></h2>
+<section class="products">
+
+<div class="card">
+<img src="https://m.media-amazon.com/images/I/81xrbd+62SL._SY550_.jpg">
+<h3>ZUCAI</h3>
+<p>Girls Crepe Silk Length Printed Dress</p>
+<p><del>₹999</del><b>₹799</b></p>
+<button onclick="addToCart('ZUCAI', 799,'Girls Crepe Silk Length Printed Dress','https://m.media-amazon.com/images/I/81xrbd+62SL._SY550_.jpg')">Add to Cart</button>
+</div>
+
+<div class="card">
+<img src="https://m.media-amazon.com/images/I/61Yg0Ft+srL._SY550_.jpg">
+<h3>NAUTINATI</h3>
+<p>Boys Casual Stylish Pants</p>
+<p><del>₹1499</del><b> ₹999 </b> 🔥Hot Deal</p>
+<button onclick="addToCart('NAUTINATI', 999,'Boys Casual Stylish Pants','https://m.media-amazon.com/images/I/61Yg0Ft+srL._SY550_.jpg')">Add to Cart</button>
+</div>
+
+<div class="card">
+<img src="https://m.media-amazon.com/images/I/61cBCp9hchL._SX522_.jpg">
+<h3>ISHTI</h3>
+<p>Girl's Tunic Top with Tassel Detail</p>
+<p><del>₹899</del><b>₹699</b></p>
+<button onclick="addToCart('ISHTI', 699,'Girl Tunic Top with Tassel Detail','https://m.media-amazon.com/images/I/61cBCp9hchL._SX522_.jpg')">Add to Cart</button>
+</div>
+
+<div class="card">
+<img src="https://m.media-amazon.com/images/I/61BwX5gin6L._SY550_.jpg">
+<h3>VASTRAA FUSION</h3>
+<p>Traditional Boys kurta</p>
+<p><del>₹1349</del><b>₹899</b></p>
+<button onclick="addToCart('VASTRAA FUSION', 899,'Traditional Boys kurta','https://m.media-amazon.com/images/I/61BwX5gin6L._SY550_.jpg')">Add to Cart</button>
+</div>
+
+</section>
+<hr>
+
+<h2>Shoes<span class="material-symbols-outlined">arrow_drop_down</span></h2>
+<section class="products">
+
+<div class="card">
+<img src="https://m.media-amazon.com/images/I/61U70iqOAIL._SY500_.jpg">
+<h3>ASIAN</h3>
+<p>Men's Wonder-13 Sports Running…</p>
+<p><del>₹1999</del><b>₹1199</b></p>
+<button onclick="addToCart('ASIAN', 1199,'Men Wonder-13 Sports Running…','https://m.media-amazon.com/images/I/61U70iqOAIL._SY500_.jpg')">Add to Cart</button>
+</div>
+
+<div class="card">
+<img src="https://m.media-amazon.com/images/I/910Yz5bFFaL._SY695_.jpg">
+<h3>AADI</h3>
+<p>Men's Synthetic Leather Chelsea Boots</p>
+<p><del>₹2999</del><b> ₹2299 </b>🔥Hot Deal</p>
+<button onclick="addToCart('AADI', 2299,'Men Synthetic Leather Chelsea Boots','https://m.media-amazon.com/images/I/910Yz5bFFaL._SY695_.jpg')">Add to Cart</button>
+</div>
+
+<div class="card">
+<img src="https://m.media-amazon.com/images/I/81Gk2rCPmqL._SY500_.jpg">
+<h3>MYAU</h3>
+<p>Girls' Embroidery Design Slip-On Shoes</p>
+<p><del>₹2499</del><b>₹1999</b></p>
+<button onclick="addToCart('MYAU', 1999,'Girls Embroidery Design Slip-On Shoes','https://m.media-amazon.com/images/I/81Gk2rCPmqL._SY500_.jpg')">Add to Cart</button>
+</div>
+
+<div class="card">
+<img src="https://m.media-amazon.com/images/I/6112oVV6kUL._SY535_.jpg">
+<h3>THE SOULED STORE</h3>
+<p>Women Lace Up Sneaker Shoes</p>
+<p><del>₹2299</del><b>₹1799</b></p>
+<button onclick="addToCart('THE SOULED STORE', 1799,'Women Lace Up Sneaker Shoes','https://m.media-amazon.com/images/I/6112oVV6kUL._SY535_.jpg')">Add to Cart</button>
+</div>
+
+</section>
+
+<script src="script.js"></script>
+</body>
+<footer class="site-footer">
+    <div class="footer-container">
+
+        <div class="footer-section">
+            <h3>StyleKart</h3>
+            <p>Your smart fashion destination powered by AI technology.</p>
+        </div>
+
+        <div class="footer-section">
+            <h4>Quick Links</h4>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="outfit.html">AI Outfit Builder</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-section">
+            <h4>Location</h4>
+            <p>
+                9-110/5/A<br>
+                Gayatri nagar,Boduppal,<br>
+                Medchal Malkajgiri,<br>
+                500092.
+            </p>
+        </div>
+
+        <div class="footer-section">
+            <h4>Contact</h4>
+            <p><i class="fa-solid fa-envelope"></i> support@stylekart.com</p>
+            <p><i class="fa-solid fa-phone"></i> +91 6302739942</p>
+
+            <div class="social-icons">
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        <p>© 2026 StyleKart. All rights reserved.</p>
+        <p>Built with ❤️ by Dinesh</p>
+    </div>
+</footer>
+
+</html>

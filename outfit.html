@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Outfit Builder</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+<header class="navbar">
+    <h1 class="logo">StyleKart AI</h1>
+    <div class="nav-right">
+        <a href="index.html">Go To Shopping</a>
+        <a href="cart.html" class="cart"><i class="fa-brands fa-opencart"></i> Cart </a>
+    </div>
+</header>
+<section class="builder">
+    <h2>Get Your Perfect Outfit</h2>
+    <h5>Shop Smart. Style Better. Powered by AI.</h5>
+    <label>Gender:</label>
+    <select id="gender">
+        <option>Male</option>
+        <option>Female</option>
+    </select>
+    <label>Occasion:</label>
+    <select id="occasion">
+        <option>Casual</option>
+        <option>Party</option>
+        <option>Formal</option>
+    </select>
+
+
+    <button onclick="generateOutfit()">Generate Outfit</button>
+
+</section>
+
+<div id="result"></div>
+
+<script src="script.js"></script>
+</body>
+<footer>
+
+    <div class="footer-bottomm">
+        <p>© 2026 StyleKart. All rights reserved.</p>
+        <p>Built with ❤️ by Dinesh</p>
+    </div>
+</footer>
+</html>

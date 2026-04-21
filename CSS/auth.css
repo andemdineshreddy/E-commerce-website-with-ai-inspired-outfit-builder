@@ -1,0 +1,133 @@
+/* ===== GLOBAL ===== */
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Poppins',sans-serif;
+}
+
+body{
+  height:100vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  background:
+    linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+    url("login background.png.jpeg");
+  background-size:cover;
+  background-position:center;
+}
+
+/* ===== COMMON CARD ===== */
+.auth-container{
+  width:100%;
+  max-width:400px;
+}
+
+.auth-card{
+  background:rgba(255,255,255,0.9);
+  padding:30px;
+  border-radius:15px;
+  text-align:center;
+  backdrop-filter:blur(10px);
+  box-shadow:0 10px 30px rgba(0,0,0,0.3);
+}
+
+/* ===== TEXT ===== */
+.auth-card h2{
+  margin-bottom:10px;
+}
+
+.auth-card p{
+  color:gray;
+  margin-bottom:20px;
+}
+
+/* ===== INPUT ===== */
+.input-group{
+  margin-bottom:15px;
+}
+
+.input-group input{
+  width:100%;
+  padding:12px;
+  border-radius:8px;
+  border:1px solid #ccc;
+}
+
+.input-group input:focus{
+  border-color:orange;
+  box-shadow:0 0 10px rgba(255,165,0,0.5);
+}
+
+/* ===== PASSWORD TOGGLE ===== */
+.password-box{
+  position:relative;
+}
+
+.password-box span{
+  position:absolute;
+  right:10px;
+  top:10px;
+  cursor:pointer;
+}
+
+/* ===== BUTTON ===== */
+button{
+  width:100%;
+  padding:12px;
+  border:none;
+  border-radius:8px;
+  background:orange;
+  font-weight:bold;
+  cursor:pointer;
+  transition:0.3s;
+}
+
+button:hover{
+  background:#ff6600;
+}
+
+/* ===== LINK ===== */
+.auth-link{
+  margin-top:15px;
+}
+
+.auth-link a{
+  color:#667eea;
+  text-decoration:none;
+  font-weight:bold;
+}
+#successMessage{
+  color: green;
+  font-weight: bold;
+  margin-left: 35px;
+  padding: 10px;
+  box-shadow: white;
+  
+}
+/* ===== MOBILE AUTH ===== */
+@media (max-width: 480px){
+
+  .auth-card{
+    width: 90%;
+    padding: 20px;
+  }
+
+  h2{
+    font-size: 20px;
+  }
+
+  input{
+    font-size: 14px;
+  }
+
+  button{
+    font-size: 14px;
+  }
+}
+/* smoother touch */
+button{
+  touch-action: manipulation;
+}
